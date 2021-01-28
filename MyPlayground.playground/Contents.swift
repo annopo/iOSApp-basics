@@ -78,5 +78,3 @@ func areaOfSquare(withSideLength length:Int) {
 }
 
 areaOfSquare(withSideLength: 3)
-
-
