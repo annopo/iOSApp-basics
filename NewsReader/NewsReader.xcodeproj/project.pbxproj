@@ -13,6 +13,7 @@
 		E4FB937525C9741200282E14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4FB937425C9741200282E14 /* Assets.xcassets */; };
 		E4FB937825C9741200282E14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4FB937625C9741200282E14 /* LaunchScreen.storyboard */; };
 		E4FB938025C9749100282E14 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FB937F25C9749100282E14 /* ListViewController.swift */; };
+		E4FB938225C98CE800282E14 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FB938125C98CE800282E14 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E4FB937725C9741200282E14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4FB937925C9741200282E14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4FB937F25C9749100282E14 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		E4FB938125C98CE800282E14 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				E4FB936B25C9741100282E14 /* AppDelegate.swift */,
 				E4FB936D25C9741100282E14 /* SceneDelegate.swift */,
 				E4FB937125C9741100282E14 /* Main.storyboard */,
+				E4FB938125C98CE800282E14 /* Item.swift */,
 				E4FB937F25C9749100282E14 /* ListViewController.swift */,
 				E4FB937425C9741200282E14 /* Assets.xcassets */,
 				E4FB937625C9741200282E14 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4FB938225C98CE800282E14 /* Item.swift in Sources */,
 				E4FB936C25C9741100282E14 /* AppDelegate.swift in Sources */,
 				E4FB936E25C9741100282E14 /* SceneDelegate.swift in Sources */,
 				E4FB938025C9749100282E14 /* ListViewController.swift in Sources */,
