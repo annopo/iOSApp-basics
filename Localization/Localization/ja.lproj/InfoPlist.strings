@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  Localization
+
+  Created by pecorium on 2021/02/03.
+  Copyright © 2021 annopo. All rights reserved.
+*/
+
+CFBundleDisplayName = "日本語アプリ";
