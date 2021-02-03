@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var label: UILabel!
     @IBAction func sayHello() {
-        label.text = "Hello"
+        label.text = NSLocalizedString("Hello", comment: "")
     }
     override func viewDidLoad() {
         super.viewDidLoad()

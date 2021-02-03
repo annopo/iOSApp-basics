@@ -14,6 +14,7 @@
 		E4FB93A025CA9A1600282E14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4FB939F25CA9A1600282E14 /* Assets.xcassets */; };
 		E4FB93A325CA9A1600282E14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4FB93A125CA9A1600282E14 /* LaunchScreen.storyboard */; };
 		E4FB93AE25CA9BF800282E14 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4FB93B025CA9BF800282E14 /* InfoPlist.strings */; };
+		E4FB93B325CA9F4E00282E14 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4FB93B525CA9F4E00282E14 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E4FB93AA25CA9B8500282E14 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		E4FB93AB25CA9B8500282E14 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		E4FB93AF25CA9BF800282E14 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E4FB93B425CA9F4E00282E14 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				E4FB939625CA9A1500282E14 /* AppDelegate.swift */,
 				E4FB939825CA9A1500282E14 /* SceneDelegate.swift */,
 				E4FB939A25CA9A1500282E14 /* ViewController.swift */,
+				E4FB93B525CA9F4E00282E14 /* Localizable.strings */,
 				E4FB939C25CA9A1500282E14 /* Main.storyboard */,
 				E4FB939F25CA9A1600282E14 /* Assets.xcassets */,
 				E4FB93A125CA9A1600282E14 /* LaunchScreen.storyboard */,
@@ -131,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4FB93B325CA9F4E00282E14 /* Localizable.strings in Resources */,
 				E4FB93A325CA9A1600282E14 /* LaunchScreen.storyboard in Resources */,
 				E4FB93AE25CA9BF800282E14 /* InfoPlist.strings in Resources */,
 				E4FB93A025CA9A1600282E14 /* Assets.xcassets in Resources */,
@@ -178,6 +182,14 @@
 				E4FB93AF25CA9BF800282E14 /* ja */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E4FB93B525CA9F4E00282E14 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4FB93B425CA9F4E00282E14 /* ja */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
