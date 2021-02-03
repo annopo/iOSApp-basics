@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LCI-kR-oDs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xg5-6X-41V">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--List View Controller-->
+        <!--一覧-->
         <scene sceneID="A3h-ar-bjY">
             <objects>
                 <tableViewController id="LCI-kR-oDs" customClass="ListViewController" customModule="NewsReader" customModuleProvider="target" sceneMemberID="viewController">
@@ -31,6 +32,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Imu-xf-dlf" kind="show" id="km3-Pc-50w"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -38,10 +42,64 @@
                             <outlet property="delegate" destination="LCI-kR-oDs" id="fik-D6-71X"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="一覧" id="aa7-De-MHV"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SIM-OO-vgc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="161" y="132"/>
+            <point key="canvasLocation" x="1071.0144927536232" y="131.91964285714286"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Fk4-x2-w1T">
+            <objects>
+                <viewController id="Imu-xf-dlf" customClass="DetailViewController" customModule="NewsReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C90-G0-OxG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3F3-t3-a5T">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3F3-t3-a5T" firstAttribute="centerX" secondItem="C90-G0-OxG" secondAttribute="centerX" id="0bE-Ot-fPQ"/>
+                            <constraint firstItem="3F3-t3-a5T" firstAttribute="centerY" secondItem="C90-G0-OxG" secondAttribute="centerY" id="VkG-ZO-xk0"/>
+                            <constraint firstItem="3F3-t3-a5T" firstAttribute="top" secondItem="C90-G0-OxG" secondAttribute="topMargin" constant="-88" id="bgt-kQ-pwh"/>
+                            <constraint firstItem="3F3-t3-a5T" firstAttribute="leading" secondItem="EJr-fb-Hxi" secondAttribute="leading" id="lBS-D9-lzQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EJr-fb-Hxi"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ih2-HR-pqZ"/>
+                    <connections>
+                        <outlet property="webView" destination="3F3-t3-a5T" id="vuh-87-5gM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HQ7-e0-2pF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1571.0144927536232" y="67.633928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2MW-1e-oto">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xg5-6X-41V" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="caV-Lu-Buf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LCI-kR-oDs" kind="relationship" relationship="rootViewController" id="kXe-6A-iGC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g7d-Mb-B7g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="160.86956521739131" y="131.91964285714286"/>
         </scene>
     </scenes>
 </document>
