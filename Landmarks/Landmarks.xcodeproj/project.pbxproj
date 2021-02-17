@@ -10,6 +10,7 @@
 		E4247F8B25D7C35B009DB93D /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4247F8A25D7C35B009DB93D /* LandmarkRow.swift */; };
 		E4247F8F25D8CED5009DB93D /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4247F8E25D8CED5009DB93D /* LandmarkList.swift */; };
 		E4247F9225D8D935009DB93D /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4247F9125D8D935009DB93D /* LandmarkDetail.swift */; };
+		E4247F9525DCEEC5009DB93D /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4247F9425DCEEC5009DB93D /* FavoriteButton.swift */; };
 		E43CA15525D7B35000AC094C /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = E43CA15425D7B35000AC094C /* landmarkData.json */; };
 		E43CA15825D7B38000AC094C /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43CA15725D7B38000AC094C /* Landmark.swift */; };
 		E43CA15B25D7B60900AC094C /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43CA15A25D7B60900AC094C /* ModelData.swift */; };
@@ -25,6 +26,7 @@
 		E4247F8A25D7C35B009DB93D /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		E4247F8E25D8CED5009DB93D /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		E4247F9125D8D935009DB93D /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
+		E4247F9425DCEEC5009DB93D /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		E43CA15425D7B35000AC094C /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		E43CA15725D7B38000AC094C /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		E43CA15A25D7B60900AC094C /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
@@ -53,10 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				E488D97025D529EE00918953 /* ContentView.swift */,
-				E488D98225D635B600918953 /* CircleImage.swift */,
-				E488D98525D636F600918953 /* MapView.swift */,
-				E4247F8A25D7C35B009DB93D /* LandmarkRow.swift */,
-				E4247F8E25D8CED5009DB93D /* LandmarkList.swift */,
+				E4247F9725DCF13E009DB93D /* Landmarks */,
+				E4247F9825DCF15A009DB93D /* Helpers */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -76,6 +76,26 @@
 				E43CA15425D7B35000AC094C /* landmarkData.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		E4247F9725DCF13E009DB93D /* Landmarks */ = {
+			isa = PBXGroup;
+			children = (
+				E4247F8E25D8CED5009DB93D /* LandmarkList.swift */,
+				E4247F8A25D7C35B009DB93D /* LandmarkRow.swift */,
+				E4247F9125D8D935009DB93D /* LandmarkDetail.swift */,
+			);
+			path = Landmarks;
+			sourceTree = "<group>";
+		};
+		E4247F9825DCF15A009DB93D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E488D98225D635B600918953 /* CircleImage.swift */,
+				E488D98525D636F600918953 /* MapView.swift */,
+				E4247F9425DCEEC5009DB93D /* FavoriteButton.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		E488D96225D529EE00918953 = {
@@ -104,7 +124,6 @@
 				E488D97225D529EF00918953 /* Assets.xcassets */,
 				E488D97725D529EF00918953 /* Info.plist */,
 				E488D97425D529EF00918953 /* Preview Content */,
-				E4247F9125D8D935009DB93D /* LandmarkDetail.swift */,
 			);
 			path = Landmarks;
 			sourceTree = "<group>";
@@ -190,6 +209,7 @@
 				E488D97125D529EE00918953 /* ContentView.swift in Sources */,
 				E488D98625D636F600918953 /* MapView.swift in Sources */,
 				E488D96F25D529EE00918953 /* LandmarksApp.swift in Sources */,
+				E4247F9525DCEEC5009DB93D /* FavoriteButton.swift in Sources */,
 				E4247F8F25D8CED5009DB93D /* LandmarkList.swift in Sources */,
 				E4247F9225D8D935009DB93D /* LandmarkDetail.swift in Sources */,
 				E488D98325D635B600918953 /* CircleImage.swift in Sources */,
