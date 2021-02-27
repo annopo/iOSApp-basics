@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E41DBC7525EA0C7100DC3337 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41DBC7425EA0C7100DC3337 /* PageControl.swift */; };
 		E4247F8B25D7C35B009DB93D /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4247F8A25D7C35B009DB93D /* LandmarkRow.swift */; };
 		E4247F8F25D8CED5009DB93D /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4247F8E25D8CED5009DB93D /* LandmarkList.swift */; };
 		E4247F9225D8D935009DB93D /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4247F9125D8D935009DB93D /* LandmarkDetail.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E41DBC7425EA0C7100DC3337 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		E4247F8A25D7C35B009DB93D /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		E4247F8E25D8CED5009DB93D /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		E4247F9125D8D935009DB93D /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 			children = (
 				E487B2B225E670A5002EDCEF /* PageViewController.swift */,
 				E487B2B925E679C7002EDCEF /* PageView.swift */,
+				E41DBC7425EA0C7100DC3337 /* PageControl.swift */,
 			);
 			path = PageView;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				E488D98625D636F600918953 /* MapView.swift in Sources */,
 				E4247FB925DE51EA009DB93D /* GraphCapsule.swift in Sources */,
 				E488D96F25D529EE00918953 /* LandmarksApp.swift in Sources */,
+				E41DBC7525EA0C7100DC3337 /* PageControl.swift in Sources */,
 				E4247F9525DCEEC5009DB93D /* FavoriteButton.swift in Sources */,
 				E4247FC725E12F7B009DB93D /* CategoryItem.swift in Sources */,
 				E4247FBB25DE51EA009DB93D /* HikeDetail.swift in Sources */,
