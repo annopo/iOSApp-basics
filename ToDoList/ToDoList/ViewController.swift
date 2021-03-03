@@ -12,10 +12,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var tableView: UITableView!
     
     var todoList = [String]()
+    // インスタンスの生成
+    // ローカルにデータを保存するインターフェースを使えるようにする
+    let userDefaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // データの読み込み
+        if let storedTodoList = userDefaults.array(forKey: "todoList") as? [String] {
+            todoList.append(contentsOf: storedTodoList)
+        }
     }
 
     @IBAction func addBtnAction(_ sender: Any) {
@@ -26,6 +32,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             if let textField = alertController.textFields?.first {
                 self.todoList.insert(textField.text!, at: 0)
                 self.tableView.insertRows(at: [IndexPath(row: 0, section: 0)], with: UITableView.RowAnimation.right)
+                
+                // 追加したtodoを保存
+                self.userDefaults.set(self.todoList, forKey: "todoList")
             }
         }
         alertController.addAction(okAction)
@@ -52,6 +61,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if editingStyle == UITableViewCell.EditingStyle.delete {
             todoList.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath as IndexPath], with: UITableView.RowAnimation.automatic)
+            
+            // 削除した内容を保存
+            userDefaults.set(todoList, forKey: "todoList")
         }
     }
     
