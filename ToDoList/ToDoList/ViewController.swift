@@ -7,8 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
     @IBOutlet weak var tableView: UITableView!
+    
+    var todoList = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,5 +21,17 @@ class ViewController: UIViewController {
     @IBAction func addBtnAction(_ sender: Any) {
     }
     
+    // セルの数を指定
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return todoList.count
+    }
+    
+    // セルの中身を設定
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "todoCell", for: indexPath)
+        let todoTitle = todoList[indexPath.row]
+        cell.textLabel?.text = todoTitle
+        return cell        
+    }
 }
 
