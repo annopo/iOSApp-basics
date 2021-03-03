@@ -19,6 +19,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
     @IBAction func addBtnAction(_ sender: Any) {
+        let alertController = UIAlertController(title: "Add ToDo", message: "Please enter a ToDo item.", preferredStyle: UIAlertController.Style.alert)
+        alertController.addTextField(configurationHandler: nil)
+        let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) { (action: UIAlertAction) in
+            // OKをタップした時の処理
+            if let textField = alertController.textFields?.first {
+                self.todoList.insert(textField.text!, at: 0)
+                self.tableView.insertRows(at: [IndexPath(row: 0, section: 0)], with: UITableView.RowAnimation.right)
+            }
+        }
+        alertController.addAction(okAction)
+        let cancelButton = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil)
+        alertController.addAction(cancelButton)
+        present(alertController, animated: true, completion: nil)
     }
     
     // セルの数を指定
@@ -31,7 +44,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = tableView.dequeueReusableCell(withIdentifier: "todoCell", for: indexPath)
         let todoTitle = todoList[indexPath.row]
         cell.textLabel?.text = todoTitle
-        return cell        
+        return cell
     }
 }
 
