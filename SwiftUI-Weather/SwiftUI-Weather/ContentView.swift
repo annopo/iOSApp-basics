@@ -31,7 +31,7 @@ struct ContentView: View {
                         .font(.system(size: 70, weight: .medium))
                         .foregroundColor(.white)
                 }
-                Spacer()
+                .padding(.bottom, 40)
                 
                 HStack(spacing: 20){
                     WeatherDayView(dayOfWeek: "TUE",
@@ -54,6 +54,18 @@ struct ContentView: View {
                                    imageName: "snow",
                                    temperature: 25)
                 }
+                Spacer()
+                
+                Button {
+                    print("tapped")
+                } label: {
+                    Text("Change Day Time")
+                        .frame(width: 280, height: 50)
+                        .background(Color.white)
+                        .font(.system(size: 20, weight: .bold, design: .default))
+                        .cornerRadius(10)
+                }
+                
                 Spacer()
             }
         }
