@@ -11,6 +11,7 @@
 		E428851125F8CD57007005EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E428851025F8CD57007005EE /* ContentView.swift */; };
 		E428851325F8CD5C007005EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E428851225F8CD5C007005EE /* Assets.xcassets */; };
 		E428851625F8CD5C007005EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E428851525F8CD5C007005EE /* Preview Assets.xcassets */; };
+		E428851F25F9EE81007005EE /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E428851E25F9EE81007005EE /* WeatherButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		E428851225F8CD5C007005EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E428851525F8CD5C007005EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E428851725F8CD5C007005EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E428851E25F9EE81007005EE /* WeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				E428851225F8CD5C007005EE /* Assets.xcassets */,
 				E428851725F8CD5C007005EE /* Info.plist */,
 				E428851425F8CD5C007005EE /* Preview Content */,
+				E428851E25F9EE81007005EE /* WeatherButton.swift */,
 			);
 			path = "SwiftUI-Weather";
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				E428851125F8CD57007005EE /* ContentView.swift in Sources */,
 				E428850F25F8CD57007005EE /* SwiftUI_WeatherApp.swift in Sources */,
+				E428851F25F9EE81007005EE /* WeatherButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
