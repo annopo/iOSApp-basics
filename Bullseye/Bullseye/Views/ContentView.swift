@@ -16,7 +16,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             VStack {
-                Text("🎯🎯🎯\nPUT THE BULLSEYE AS CLOSE AS YOU CAN TO")
+                Text("🎯🎯🎯\nPut the Bullseye as close as you can to".uppercased())
                     .bold()
                     .kerning(2.0)
                     .multilineTextAlignment(.center)
@@ -33,12 +33,19 @@ struct ContentView: View {
                     Text("100")
                         .bold()
                 }
+                .padding()
                 Button(action: {
                     print("Hello, SwiftUI!")
                     alertIsVisible = true
                 }) {
-                    Text("Hit me")
+                    Text("Hit me".uppercased())
+                        .bold()
+                        .font(.title3)
                 }
+                .padding(20.0)
+                .background(Color.blue)
+                .foregroundColor(Color.white)
+                .cornerRadius(21.0)
                 .alert(isPresented: $alertIsVisible, content: {
                     let roundedValue = Int(sliderValue.rounded())
                     return Alert(title: Text("Hello, there!"), message: Text("The slider's value is \(roundedValue).\n" + "You scored \(game.points(sliderValue: roundedValue)) points this round."), dismissButton: .default(Text("Awesome!")))
