@@ -18,6 +18,7 @@
 		E48E912E260592AA00692E4B /* RoundViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48E912D260592AA00692E4B /* RoundViews.swift */; };
 		E48E91322605AC9800692E4B /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48E91312605AC9800692E4B /* BackgroundView.swift */; };
 		E48E9136260628C200692E4B /* PointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48E9135260628C200692E4B /* PointsView.swift */; };
+		E48E913A26064C6100692E4B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48E913926064C6100692E4B /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		E48E912D260592AA00692E4B /* RoundViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundViews.swift; sourceTree = "<group>"; };
 		E48E91312605AC9800692E4B /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		E48E9135260628C200692E4B /* PointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
+		E48E913926064C6100692E4B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				E42884DC25F89612007005EE /* Game.swift */,
+				E48E913926064C6100692E4B /* Constants.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				E48E9136260628C200692E4B /* PointsView.swift in Sources */,
 				E48E91322605AC9800692E4B /* BackgroundView.swift in Sources */,
 				E42884DD25F89612007005EE /* Game.swift in Sources */,
+				E48E913A26064C6100692E4B /* Constants.swift in Sources */,
 				E42884C725F75748007005EE /* BullseyeApp.swift in Sources */,
 				E48E912E260592AA00692E4B /* RoundViews.swift in Sources */,
 			);
