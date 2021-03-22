@@ -79,3 +79,6 @@ if samGrade > chrisGrade {
 // Ternary conditional operator
 // expression ? true-value : false-value
 betterStudent = samGrade > chrisGrade ? "Sam" : "Chris"
+
+let teenagerName = myAge >= 13 && myAge <= 19 ? "Chris" : "Not me!"
+print(teenagerName)
