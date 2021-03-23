@@ -82,3 +82,19 @@ betterStudent = samGrade > chrisGrade ? "Sam" : "Chris"
 
 let teenagerName = myAge >= 13 && myAge <= 19 ? "Chris" : "Not me!"
 print(teenagerName)
+
+var petName: String? = "Mango"
+var petAge: Int? = 2
+var unwrappedPetName = petName!
+print("The pet's name is \(unwrappedPetName).")
+
+if let petName = petName,
+   let petAge = petAge {
+  print("The pet is \(petName) and they are \(petAge).")
+} else {
+  print("No pet name or age")
+}
+
+var optionalInt: Int? = nil //10
+var requiredResult = optionalInt ?? 0
+
