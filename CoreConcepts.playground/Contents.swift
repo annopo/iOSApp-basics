@@ -27,11 +27,6 @@ let samGrade = 99
 chrisGrade == samGrade
 chrisGrade != samGrade
 
-let catName = "Ozma"
-let dogName = "Mango"
-catName == dogName
-catName > dogName
-
 let myAge = 42
 let isVotingAge = myAge >= 18
 
@@ -98,3 +93,9 @@ if let petName = petName,
 var optionalInt: Int? = nil //10
 var requiredResult = optionalInt ?? 0
 
+let hasAllergies: Bool = true
+var dogName: String?
+
+dogName = hasAllergies ? nil : "Mango"
+
+let parsedInt = Int("10")
