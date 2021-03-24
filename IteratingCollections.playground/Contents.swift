@@ -12,3 +12,17 @@ for temperature in poolTemperature {
   sum += temperature
 }
 sum / poolTemperature.count
+
+print("\n")
+
+var pastries: [String] = ["cookies", "danish", "cupcake", "donut", "pie", "brownie", "fritter", "cruller"]
+for pastry in pastries {
+  if pastry[pastry.startIndex] == "c" {
+    print(pastry)
+  }
+}
+
+for pastry in pastries where pastry[pastry.startIndex] == "c" {
+  print(pastry)
+}
+
