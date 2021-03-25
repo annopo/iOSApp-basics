@@ -15,3 +15,27 @@ let union = someSet.union(anotherSet)
 someSet.formUnion(anotherSet)
 print(someSet)
 print(anotherSet)
+
+var mythicalPets: Set<String> = [
+  "🦉 Owl",
+  "🛄 Luggage",
+  "🔨 Hammer",
+  "🐉 Toothless",
+  "☁️ Flying Nimbus"
+]
+
+var animalPets = Set<String>()
+
+animalPets.insert("🐶 Mango")
+animalPets.insert("🐯 Tiger")
+animalPets.insert("🐉 Toothless")
+animalPets.insert("🦉 Owl")
+
+print(mythicalPets.union(animalPets))
+
+print(animalPets.intersection(mythicalPets))
+
+let removedPet = animalPets.remove("🐶 Mango")
+
+mythicalPets.formUnion(animalPets)
+print(mythicalPets)
