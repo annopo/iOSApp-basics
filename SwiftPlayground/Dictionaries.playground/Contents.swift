@@ -39,3 +39,24 @@ for pet in namesAndPets.values {
   print(pet)
 }
 
+var chris = [
+  "name": "Chris",
+  "profession": "Video Tutorialist",
+  "country": "Canada",
+  "city": "Halifax"
+]
+print(chris)
+
+chris["country"] = "USA"
+chris["city"] = "Cleveland"
+chris["state"] = "Ohio"
+
+print(chris)
+
+chris.removeValue(forKey: "city")
+chris["state"] = nil
+print(chris)
+
+for (key, value) in chris {
+  print("\(key): \(value)")
+}
