@@ -141,7 +141,7 @@
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <state key="normal" title="Generate Story Prompt"/>
                                         <connections>
-                                            <segue destination="Xte-rS-w5c" kind="show" id="qfr-ig-da6"/>
+                                            <action selector="generateStoryPrompt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f5m-db-6Gc"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -163,6 +163,7 @@
                         <outlet property="numberSlider" destination="RBJ-H0-3wv" id="MtR-A1-mnY"/>
                         <outlet property="storyPromptImageView" destination="EKs-sO-ikc" id="bIH-TN-RWu"/>
                         <outlet property="verbTextField" destination="CBR-oP-S2e" id="RdF-9G-KkV"/>
+                        <segue destination="Xte-rS-w5c" kind="show" identifier="StoryPrompt" id="viH-IM-ur5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -186,7 +187,7 @@
                                     <constraint firstAttribute="width" constant="240" id="5zj-c6-Kbo"/>
                                     <constraint firstAttribute="height" constant="110" id="hGu-X5-xoO"/>
                                 </constraints>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
