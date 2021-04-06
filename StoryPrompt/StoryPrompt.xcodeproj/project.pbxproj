@@ -16,6 +16,7 @@
 		E459BF2C261043FD00530A6B /* StoryPrompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E459BF2A261043FD00530A6B /* StoryPrompts.swift */; };
 		E459BF2D261043FD00530A6B /* StoryPromptEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E459BF2B261043FD00530A6B /* StoryPromptEntry.swift */; };
 		E459BF312615ACA600530A6B /* StoryPromptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E459BF302615ACA600530A6B /* StoryPromptViewController.swift */; };
+		E4CC6B33261C37CB00FDEC8A /* StoryPromptTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CC6B32261C37CB00FDEC8A /* StoryPromptTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E459BF2A261043FD00530A6B /* StoryPrompts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryPrompts.swift; path = "../../../video-ukf-materials/02-meet-the-view-controller/starter/StoryPrompts.swift"; sourceTree = "<group>"; };
 		E459BF2B261043FD00530A6B /* StoryPromptEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryPromptEntry.swift; path = "../../../video-ukf-materials/02-meet-the-view-controller/starter/StoryPromptEntry.swift"; sourceTree = "<group>"; };
 		E459BF302615ACA600530A6B /* StoryPromptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPromptViewController.swift; sourceTree = "<group>"; };
+		E4CC6B32261C37CB00FDEC8A /* StoryPromptTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPromptTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		E459BF332615ACBA00530A6B /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E4CC6B32261C37CB00FDEC8A /* StoryPromptTableViewController.swift */,
 				E459BF18260F7DA900530A6B /* AddStoryPromptViewController.swift */,
 				E459BF302615ACA600530A6B /* StoryPromptViewController.swift */,
 			);
@@ -162,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4CC6B33261C37CB00FDEC8A /* StoryPromptTableViewController.swift in Sources */,
 				E459BF312615ACA600530A6B /* StoryPromptViewController.swift in Sources */,
 				E459BF2D261043FD00530A6B /* StoryPromptEntry.swift in Sources */,
 				E459BF19260F7DA900530A6B /* AddStoryPromptViewController.swift in Sources */,
