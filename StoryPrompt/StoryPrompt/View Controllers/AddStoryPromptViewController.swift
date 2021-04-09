@@ -76,6 +76,7 @@ class AddStoryPromptViewController: UIViewController {
         return
       }
       storyPromptViewController.storyPrompt = storyPrompt
+      storyPromptViewController.isNewStoryPrompt = true
     }
   }
 }
