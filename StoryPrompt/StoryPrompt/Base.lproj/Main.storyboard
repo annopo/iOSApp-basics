@@ -40,7 +40,13 @@
                             <outlet property="delegate" destination="xwL-ua-Pet" id="edv-WU-rev"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="xU6-ow-g6a"/>
+                    <navigationItem key="navigationItem" id="xU6-ow-g6a">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="miK-a3-WZc">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="688-kI-iy1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="Xte-rS-w5c" kind="show" identifier="ShowStoryPrompt" id="ill-oM-HDs"/>
                     </connections>
@@ -74,7 +80,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="FRI-km-t7R">
-                                <rect key="frame" x="20" y="101" width="374" height="652.5"/>
+                                <rect key="frame" x="20" y="145" width="374" height="652.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zjF-EO-nUZ">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -216,14 +222,14 @@
             <objects>
                 <viewController id="Xte-rS-w5c" customClass="StoryPromptViewController" customModule="StoryPrompt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J5J-IL-uiB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="object-badge-banner" translatesAutoresizingMaskIntoConstraints="NO" id="UhC-6s-sY0">
-                                <rect key="frame" x="0.0" y="-79" width="414" height="1000"/>
+                                <rect key="frame" x="0.0" y="-52" width="414" height="1000"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="i1K-dO-SHt">
-                                <rect key="frame" x="87" y="366" width="240" height="110"/>
+                                <rect key="frame" x="87" y="393" width="240" height="110"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="5zj-c6-Kbo"/>
                                     <constraint firstAttribute="height" constant="110" id="hGu-X5-xoO"/>
@@ -255,7 +261,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="viH-IM-ur5"/>
+        <segue reference="ill-oM-HDs"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="10.circle" catalog="system" width="128" height="121"/>
