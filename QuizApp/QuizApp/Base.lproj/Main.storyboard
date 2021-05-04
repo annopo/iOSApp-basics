@@ -140,6 +140,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="トップに戻る"/>
+                                <connections>
+                                    <action selector="toTopButtonAction:" destination="Eux-hw-9RS" eventType="touchUpInside" id="ZRf-gg-BwA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="o30-w4-nN0"/>
